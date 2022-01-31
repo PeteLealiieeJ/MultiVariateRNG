@@ -1,0 +1,8 @@
+# ignore vscode extension 
+.vscode 
+
+# ignore microsoft temp
+[~][$]*
+
+# ignore macOS temp
+.DS_Store
