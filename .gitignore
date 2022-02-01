@@ -12,3 +12,6 @@ build/
 
 # ignore makefile 
 Makefile
+
+# Ignore Testing Directory
+tests/
