@@ -6,3 +6,9 @@
 
 # ignore macOS temp
 .DS_Store
+
+# build directory 
+build/
+
+# ignore makefile 
+Makefile
