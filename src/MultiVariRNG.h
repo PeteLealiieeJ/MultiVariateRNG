@@ -2,6 +2,8 @@
 #include <Eigen/Dense>
 #include <string>
 #include <iostream>
+#include <random>
+#include <chrono>
 
 class errorHandler{
     public:
@@ -11,17 +13,21 @@ class errorHandler{
 };
 
 template <typename T1, typename T2>
-// Template 1 is for mu -> Mean Vector
-// Template 2 is for sigma -> Covariance Matrix
+// TEMPLATE 1 IS FOR mu -> Mean Vector
+// TEMPLATE 2 IS FOR sigma -> Covariance Matrix
 
-// A class which holds the MV random number generator
+// MVRNG CLASS: ALLOCATE AND POINT TO THE CLASS VARIABLE 
+// USING THE "new" OPERATOR SUCH THAT YOU CAN CALL ITS 
+// CONSTRUCTOR. NOTICE THAT THIS CLASS HAS NO DEFAULT 
+// CONSTRUCTOR
 class MultiVariRNG{
     private:
-        double seed;
         T1 mu;
         T2 CholFacSigma;
+        // Normal Distribution - Zero Mean, Standard Deviation of One
+        std::normal_distribution<double> norm_dist; 
 
     public:
-        MultiVariRNG(T1, T2, double = 0);
+        MultiVariRNG(T1, T2, int = -1);
         Eigen::MatrixXd MVRNGenerate();
 };
