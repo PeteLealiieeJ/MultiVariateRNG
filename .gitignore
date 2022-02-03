@@ -1,17 +1,20 @@
-# ignore vscode extension 
-.vscode 
+# Ignore vscode extension 
+.vscode
 
-# ignore microsoft temp
+# Ignore microsoft temp
 [~][$]*
 
-# ignore macOS temp
+# Ignore macOS temp
 .DS_Store
 
-# build directory 
+# Ignore build directory 
 build/
 
-# ignore makefile 
+# Ignore personal makefile 
 Makefile
 
 # Ignore Testing Directory
 tests/
+
+# Ignore Bin Directory 
+bin/
