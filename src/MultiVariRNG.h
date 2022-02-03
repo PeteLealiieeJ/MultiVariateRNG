@@ -27,7 +27,7 @@ class errorHandler{
 };
 
 template <class T1, class T2>
-// TEMPLATE 1 IS FOR mu AND generation output -> Mean Vector
+// TEMPLATE 1 IS FOR mu AND generation output -> Mean Vector AND transformed sample
 // TEMPLATE 2 IS FOR sigma -> Covariance Matrix
 
 // MultiVariRNG CLASS: ALLOCATE AND POINT TO THE CLASS VARIABLE 
