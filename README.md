@@ -12,4 +12,4 @@ Repo. works on, see [ProofExplain.pdf](ProofExplain.pdf)
 # Utilitization
 Again, this Repo's inner-workings are HEADER ONLY, primarily due to the templating method implemented for universal application. Utilizing the 
 repo itself is simple and linking this Repository's CmakeLists with yours (although it's unnessesary) will add the class as a library interface. Most questions can be answered by looking in the examples folder which has a CMakeList and example implementation and operating proofs which show its 
-accuracy. Personally, I use this repo as a submodule of my sensor simulation repositories. BEST OF LUCK!!!
+accuracy. To build the examples, uncomment the section in the CMakeList.txt located in the Repo source dir which prompts you to 'uncomment for examples'. Personally, I use this repo as a submodule of my sensor simulation repositories. BEST OF LUCK!!!
