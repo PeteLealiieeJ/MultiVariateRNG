@@ -1,5 +1,6 @@
 #include <MultiVariRNG.h>
 #include <vector>
+#include <Eigen/Dense>
 
 // CHECKING/PROVING COVARIANCE TRANSFORM
 

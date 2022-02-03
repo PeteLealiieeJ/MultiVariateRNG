@@ -4,7 +4,16 @@
 // TO WHERE IT IS INCLUDED (HEADER)
 
 #pragma once
-#include <Eigen/Dense>
+
+// NOTICE THAT EIGEN ISN'T USED AT ALL IN THIS TEMPLATE HEADER.
+
+// ALTHOUGH THE REQUIREMENT FOR EIGEN IS APPARENT, THE HEADER DOESN'T
+// INCLUDE <EIGEN/DENSE> TO BE SAFE BECAUSE EIGEN IS OFTEN INCLUDED IN PROJECTS 
+// IN MANY DIFFERENT FASHIONS (USER INCLUDE, PROJECT INCLUDE, ETC.)
+
+// THIS MAKES IT THE RESPONSIBILITY OF THE USER TO INCLUDE EIGEN 
+// ALONG WITH THIS HEADER OF THEIR OWN FASHION. SEE EXAMPLES FOLDER.
+
 #include <string>
 #include <iostream>
 #include <random>
@@ -110,7 +119,7 @@ template <class T1, class T2>
 T1 MultiVariRNG<T1,T2>::MVRNGenerate(){
 
     // POPULATE INTITIAL RANDOM VECTOR
-    T1 xbar = Eigen::MatrixXd::Zero(mu.rows(),mu.cols());
+    T1 xbar = T1::Zero();
     for( size_t i = 0; i < xbar.size(); i++ ){
         xbar(i) = norm_dist( this -> generator );
     }
