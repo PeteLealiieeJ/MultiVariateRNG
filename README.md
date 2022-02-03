@@ -1,5 +1,5 @@
 # MultiVariateRNG
- Multi-Variate Random Number Generator to generate random numbers with the same multi-variate normal distribution contained in an Eigen Matrix. Developed primarily for producing simulated noise in UT Robotics Simulations. Note that this Repo is HEADER ONLY and doesn't need to be built.
+Multi-Variate Random Number Generator used to generate random numbers whose population is representative of an input Covariance Matrix and Mean Vector. Developed primarily for producing simulated noise in UT Robotics Simulations. Note that this Repo is HEADER ONLY and doesn't need to be built.
 
  # Dependencies 
  1. [Eigen](https://eigen.tuxfamily.org/index.php?title=Main_Page)
