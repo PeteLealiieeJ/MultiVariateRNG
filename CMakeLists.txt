@@ -11,4 +11,4 @@ target_include_directories( MultiVariRNG INTERFACE
 )
 
 # UNCOMMENT IF YOU WANT TO BUILD EXAMPLES FOLDER
-add_subdirectory(examples)
+# add_subdirectory(examples)
