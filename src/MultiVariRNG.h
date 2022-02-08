@@ -19,12 +19,20 @@
 #include <random>
 #include <chrono>
 
+// I USE THE SAME ERROR HANDLER SET UP ACROSS MULTIPLE REPOS
+// SO WE'LL "GUARD" THIS 
+#ifndef ERRORHANDLER_H
+#define ERRORHANDLER_H
+
 class errorHandler{
     public:
         size_t id;
         std::string msg;
         errorHandler( size_t, std::string );
 };
+
+#endif 
+
 
 template <class T1, class T2>
 // TEMPLATE 1 IS FOR mu AND generation output -> Mean Vector AND transformed sample
@@ -50,7 +58,7 @@ class MultiVariRNG{
 };
 
 // ERROR HANDLER CONSTRUCTOR 
-errorHandler::errorHandler(size_t idi, std::string msgi):
+inline errorHandler::errorHandler(size_t idi, std::string msgi):
 id(idi),msg(msgi){};
 
 // ONLY CONSTRUCTOR - I RECOMMEND GETTING POINTER TO CLASS WITH "new" OPERATOR
